@@ -1,0 +1,10 @@
+push
+pop
+shift // remove element to start
+unshift // add element tot start 
+reverse
+sort
+splice 
+copywithin
+indexof
+lastindexof

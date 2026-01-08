@@ -1,0 +1,35 @@
+Summary:
+
+Function: Small peice of code or program
+Types:
+declaration (definition)
+expression
+anonymous
+arrow
+IIFE 
+and callback
+
+Callback:
+callback is a function passed as an argument to another function,
+which is then executed after the first function completes it's task.
+
+
+
+function getNameFromDB(cb){
+    // DB connection and retrive name from DB
+    let nm = 'ABC';
+    cb(nm);
+}
+
+function display(name){
+    console.log('recevied name from first function operation ', name);
+}
+
+getNameFromDB(display);
+
+function greet(userName){
+    console.log('Hello, '+ userName+'!');
+}
+
+another usage of getNameFromDB
+getNameFromDB(greet);

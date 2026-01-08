@@ -1,0 +1,32 @@
+data type :
+            A data type tells JavaScript what kind of value a variable stores and how it can be used.
+
+Memory type :
+        A.  Stack Memory
+                        Purpose: Stores primitive values and function call frames (execution context).
+                        Stores: Primitive data types (number, string, boolean, null, undefined, symbol, bigint) and references to objects.
+                        Memory allocation: Static — size is fixed when the variable is created.
+                        Access speed: Very fast (LIFO — Last In, First Out).
+                        Lifetime: Data is automatically removed when the function scope ends.
+
+        B.  Heap Memory
+                        Purpose: Stores non-primitive values (objects, arrays, functions).
+                        Stores: Objects, arrays, and functions.
+                        Memory allocation: Dynamic — size can grow or shrink at runtime.
+                        Access speed: Slower than stack (because you look up a reference).
+                        Lifetime: Data stays until garbage collection removes unused objects.
+
+Types of data_type :
+        1. Primitive Data Types:   builtin data type
+                        These are basic, single values that are immutable (cannot be changed directly).
+                        They are stored directly in the stack memory.    
+                        eg:string,number,boolean,undefine,null,symbol,..;
+
+        2. Non-Primitive Data Types:  derived data types
+                        These store collections or complex structures.
+                        They are stored in the heap memory, 
+                        and the variable only stores a reference (address) to the data.                
+                        eg: array,object,function,...;
+                        
+
+                        

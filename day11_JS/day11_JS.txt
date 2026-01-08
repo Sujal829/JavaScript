@@ -1,0 +1,80 @@
+Summary:
+
+1. Control Statement
+    - if, if else, nested if else, switch case
+2. Looping Statement
+    - for loop, while loop, do while loop
+
+    for(initialization; condition; increment/decrement){
+        //code to be executed
+    }
+    iteration or loop
+
+    1,2,3,4,5,6.....
+    
+    initialization
+    while(condition){
+        //code to be executed
+        increment/decrement
+    }
+
+    initialization
+    do{
+        //code to be executed
+        increment/decrement
+    }while(condition)
+
+
+For loop:
+ 1. Fixed iteration
+ 2. Controls are All in one
+ 3. Condition is checked before loop starts
+
+while:
+    1. unknown iteration
+    2. Separate Control
+    3. Condition is checked before loop starts
+
+do ..while:
+    1. At least one iteration
+    2. Separate Control
+    3. After first loop
+
+    1. for loop:
+        var cart = there are three items;
+
+        for(var i = 0; i < items in the cart,i++){
+            console.log(i, All cart items will be visible);
+        }
+    
+    wait for user to checkout
+    2. while 
+
+        var isCheckout = false;
+        var count=0;
+        while(!isCheckout){
+            console.log('still shopping...');
+            var yes = 5;
+            if(yes===count){
+                isCheckout=true;
+                console.log('User checked out!);
+            }
+            count++;
+        }
+
+
+    var age;
+
+    do {
+        age = user will enter the age
+
+    }while(age < 18);
+
+    console.log('Access granted!);
+
+    captcha example:
+
+    var isCaptchamatching;
+    do{
+        isCaptchamatching = promt('Enter captcha!')
+    } while(isCaptchamatching !== 'ZwK10');

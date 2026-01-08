@@ -1,0 +1,12 @@
+operators
+
+1. arethmetic (+,-,*,/,%,++,--) post-increment,pre-increment
+2. comparision (==,===,!=,!==(value datatype diff))
+3. logical ( &&,||,!)
+4. conditional(==,===,!=,!==,>=,<=,>,<)
+5. bitwise( & , | , ^);
+6. assignment(=,+=,-=,*=,/=,)
+misleniou operators
+1 typeof 
+
+2 . Ternary operators ( (condition)?true:false; )

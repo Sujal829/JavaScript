@@ -1,0 +1,40 @@
+control flow :
+    is the order in which statemnts are executed
+
+by default flow in js : top to bottom (left to right) 
+
+syncronous programing :
+    as default flow will be top- bottom
+    we have to wait for comp the 1st before going next
+
+async :
+ we dosent need to wait for 1st task to execute athe another one    
+
+ callback
+ timer meth
+
+
+promises is object that perform async operation like complition or failure of task
+
+promises :
+
+pending
+fulfiled
+reject
+
+async  await 
+
+async :
+async is used brefor funct so it will convert function to promises 
+it will alwasy return promises if we return normal value so it will convert in to promise 
+
+await :
+   
+
+
+Scope in js
+1. Global Scope
+2. Local Scope
+3. functional Scope
+4. block scope   
+

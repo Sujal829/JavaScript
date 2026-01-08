@@ -1,0 +1,12 @@
+object literals
+
+using new object
+
+let a = new Object();
+let p = new Object({
+
+});
+
+
+a.name
+a['name']

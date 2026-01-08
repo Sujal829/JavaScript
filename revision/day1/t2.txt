@@ -1,0 +1,30 @@
+var 
+    Redeclaration: ✅ Allowed in the same scope.
+    Re-assignment: ✅ Allowed.
+
+    eg:
+    var x = 10;
+    var x = 20; // No error
+    console.log(x); // 20
+
+let:
+    Redeclaration: ❌ Not allowed in the same scope.
+    Re-assignment: ✅ Allowed.
+
+    eg:
+    let y = 10;
+    y = 15;  // ✅ Allowed
+    // let y = 20; ❌ Error (same scope redeclaration)
+
+const:
+    Redeclaration: ❌ Not allowed.
+    Re-assignment: ❌ Not allowed (value fixed after declaration).
+    Note: For arrays & objects → contents can change, but reference cannot.
+    eg:
+    const z = 30;
+    // z = 40; ❌ Error
+    // const z=15; ❌ Error
+    const arr = [1, 2];
+    arr.push(3); // ✅ Allowed (internal change)
+    console.log(arr); // [1, 2, 3]
+ 

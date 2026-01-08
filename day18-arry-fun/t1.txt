@@ -1,0 +1,36 @@
+fill
+// function expression
+let a = function f1()
+{
+    return valeu;
+}
+
+Anonymous Function
+
+A function without a name (commonly used as arguments).
+
+setTimeout(function() {
+  console.log("Anonymous function executed");
+}, 1000);
+
+// arrow function
+let a = ()=> {
+    return value
+}
+elet d = ()>
+
+let a = (a,b) => a+b
+console.log(a(1,2));
+
+let a=[1,2,3,4,5]
+
+a.forEach(function(fruit,index)
+{
+    console.log(a,':',incex)
+})
+
+forEach: itrerates over the each item
+
+map : iterates and return a copy of array
+
+some every find

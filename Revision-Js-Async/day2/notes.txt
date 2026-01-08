@@ -1,0 +1,272 @@
+Symbol() :
+A JavaScript Symbol is a primitive data type just like Number, String, or Boolean.
+It represents a unique "hidden" identifier that no other code can accidentally access.
+eg:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+let id = Symbol('id');
+person[id] = 140353;
+console.log(person.id);
+
+Symbols are always unique.
+If you create two symbols with the same description they will have different values:
+Symbol("id") == Symbol("id"); // false
+
+BigInt():
+BigInt is a new primitive data type used to represent very large integers 
+— larger than what Number can safely store.
+eg:
+console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+
+console.log(9007199254740991 + 1); // 9007199254740992
+console.log(9007199254740991 + 2); // 9007199254740992 ❌ (wrong)
+console.log(BigInt(9007199254740991) + BigInt(1)); // 9007199254740992n
+console.log(BigInt(9007199254740991) + BigInt(2)); // 9007199254740993n ✔️ (correct)
+
+Set():
+A Set is an object that stores unique values of any type (primitive values, functions, objects).
+A Set can only contain unique values. An attempt to add a duplicate value will be ignored.
+eg:
+let set = new Set([1,2,2,3,3,1,1,2,4]);
+set.add(5);
+console.log(set);
+
+Map():
+A Map is an object that stores key-value pairs, similar to objects, but with differences:
+Keys can be of any data type (objects, functions, primitive values), unlike plain objects where keys are strings.
+Maintains the original insertion order of keys.
+eg:
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+
+class :
+Class is the collection of properties and methods where
+properties are called data and methods are the functions 
+we can access the properties and methods from class by creating their object
+
+eg:
+Class name{
+    //properties
+    // methods 
+    function name(){
+    }
+}
+
+
+Modules:
+JavaScript Modules is a fundamental feature in Modern JavaScript.
+Modules are code files that can export variables and functions to other files.
+You use import and export to interchange functionalities between modules.
+
+export 
+import
+
+Static prop & methods
+static pro and methods are directly related to the class.
+we dosent need to create the object of that class to access the prop and methods 
+we can directyly access it by using the class name .
+
+to define the static prop and methods we use static keyword 
+eg:
+static prop = value;
+static function-name{}
+
+Paramiterized class :
+we pass and argument when we create the object of class 
+
+
+Access Modifieres :
+
+Public:
+Can be accessed anywhere — inside or outside the class.
+private(#):
+Can only be accessed inside the class that defines them.
+protected(_):
+access in Class + subclass
+
+
+Closure :
+is the function that have the access to the outer scope variable
+
+curring functon :
+a function that takes multiple arguments into a series of functions.
+
+
+Pure function:
+a function that return same value is pure function
+
+impure function:
+a function which return diff value is impure function.
+
+higher-order function :
+it is similar to callback , one function is passed as argument to another function
+
+firstclass function:
+a function that assigned to variable is firstclass function.
+
+
+Generator function
+it is a special type of function that can be paused and resumed
+it uses the * symbol to indicate that it is a generator function
+yeild 
+it returns an iterator object which has next() method
+
+iterator 
+it is an object that implements the iterable protocol
+it has a next() method that returns the next value when called
+it is used to iterate over collections like arrays, strings etc.
+it is used to create custom iterators for custom data structures
+it is used to implement generators
+works with arrays,strings,map,set
+eg:
+let arr=[1,2,3];
+const it=arr[Symbol.iterator]();
+console.log(it.next());
+
+
+call VS apply VS bind
+to change the context of this keyword
+| Method  | When it runs?                | How to pass arguments?              |
+| ------- | ---------------------------- | ----------------------------------- |
+| `call`  | Immediately                  | List of arguments (comma-separated) |
+| `apply` | Immediately                  | Array of arguments                  |
+| `bind`  | Later (returns new function) | List or array (like call)           |
+
+
+falsy value:
+
+| Falsy Value | Description                                |
+| ----------- | ------------------------------------------ |
+| false       | Boolean false itself                       |
+|  0          | Number zero                                |
+|  -0         | Negative zero                              |
+|  0n         | BigInt zero                                |
+|  ""         | Empty string (single, double, or backtick) |
+|  null       | No value                                   |
+|  undefined  | Not defined                                |
+|  NaN        | Not a Number                               |
+
+Truthy Values:
+
+Non-empty strings → "hello", "0", "false"
+Non-zero numbers → 42, -7, 3.14
+Arrays → []
+Objects → {}
+
+
+
+ptototype inheritance :
+Prototypal inheritance is a mechanism in JavaScript 
+by which objects can inherit properties and methods from other objects.
+Every object in JavaScript has a hidden internal property called :
+[[Prototype]] (accessible via __proto__), 
+which acts as a link to another object — called its prototype.
+we can add define method in prototype using prototype or __proto__ keyword
+
+
+OOPs 
+1.Encapsulation
+Bundling data (properties) and methods (functions) together in one unit (class or object).
+
+2.Abstraction
+Hiding complex implementation details and showing only essential features to the user.
+
+3.Inheritance
+One class can inherit properties and methods from another class.
+
+4.Polymorphism
+Same method behaves differently based on the object calling it.
+
+
+copy Objects:
+1.reference copy :
+creates the reference copy of object
+if modify copy object and orignal will also get affected.
+
+2.Shallow Copy
+Copies only the first level of the object.
+Nested objects are still linked (referenced) to the original.
+
+3.Deep Copy
+Creates a completely independent copy, including nested objects.
+use: structuredClone() 
+
+
+What is an Execution Context?
+An Execution Context (EC) is the environment where JavaScript code is evaluated and executed.
+It’s like a workspace or container that holds everything JS needs to run your code — variables, functions, and the value of this.
+
+🧩 1️⃣ Types of Execution Contexts
+There are 2 main types:
+
+Type	                                            Description
+Global Execution Context (GEC)	        Created when the JS program starts.
+Function Execution Context (FEC)	        Created whenever a function is invoked.
+
+🏁 Global Execution Context (GEC)
+When you start running any JS file:
+The GEC is created.
+
+
+🧮 Function Execution Context (FEC)
+Each time you call a function, JavaScript creates a new execution context for that function.
+➡️ Each FEC is independent but can access:
+Its own variables
+Outer scopes (via scope chain)
+
+
+⚙️ 2️⃣ The Execution Context Lifecycle
+Each context (GEC or FEC) is created in two phases:
+
+🔹 (1) Creation Phase (Memory Creation / Hoisting)
+During this phase:
+A new execution context is created.
+Memory (Variable Object) is allocated for:
+Variables (var → initialized as undefined)
+Functions (whole function is hoisted)
+
+ 🔹 (2) Execution Phase
+ Now, the code runs line by line:
+ Variables get assigned actual values.
+ Functions get executed.
+ New contexts may be created (for function calls).
+
+⚙️ 3️⃣ The Execution Stack (Call Stack)
+All Execution Contexts are managed using a stack structure (LIFO — Last In, First Out) called the Call Stack.
+
+let a = 10;
+
+function first() {
+  console.log("First");
+  second();
+}
+
+function second() {
+  console.log("Second");
+}
+
+first();
+console.log("End");
+
+
+🧭 Step-by-Step Execution:
+Global Context created
+Variables a, first, and second added.
+a is set to 10.
+first() called
+A new Function Execution Context (FEC) for first is created.
+Added on top of Call Stack.
+Inside first, second() is called.
+A new FEC for second is created and added to stack.
+second finishes → removed from stack.
+first finishes → removed from stack.
+Back to Global Context → console.log("End") runs.
+GEC is finally popped off after the script ends.

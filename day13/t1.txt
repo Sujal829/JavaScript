@@ -1,0 +1,16 @@
+methods 
+
+length
+toLowerCase
+toUpperCase
+console.dir
+trim
+trimStart
+trimEnd
+charAt
+indexOf
+lastIndexOf
+includes
+reverse
+split // string-> array
+join //

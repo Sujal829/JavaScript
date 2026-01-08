@@ -1,0 +1,18 @@
+slice
+substr
+
+tostring
+tofixed
+toprecision
+
+
+| Feature         | **slice()**  | **substring()** |
+| --------------- | ------------ | --------------- |
+| Negative Index  | ✅ Supported | ❌ Not Supported |
+| start > end     | Returns `""` | Swaps values    |
+| Original String | Not modified | Not modified    |
+
+
+slice() ✅ supports negative indices (counts from end of string).
+
+substring() ❌ does not support negative indices (treats them as 0).

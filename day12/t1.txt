@@ -1,0 +1,59 @@
+1. What is Type Coercion?
+
+Type coercion is the process where JavaScript automatically converts one data type into another when required.
+
+It happens implicitly (by JS engine) or explicitly (by developer).
+
+console.log("5" - 2); // 3   ("5" → number)
+console.log("5" + 2); // "52" (2 → string)
+
+2. Types of Coercion
+ a. Explicit Coercion (Manual)
+    When you intentionally convert values:
+    Number("123");   // 123
+    String(456);     // "456"
+    Boolean(0);      // false
+
+ b. Implicit Coercion (Automatic)
+    When JS engine converts values silently:
+    "5" * 2;     // 10  ("5" → number)
+    "5" + 2;     // "52" (2 → string)
+    "5" - 2;      // 3   
+    "Hello" + 5;  // "Hello5"
+    true + "1";   // "true1"
+
+3. Rules of Type Coercion
+    3.1 String Conversio
+    Happens when using + with a string.
+    Objects/arrays are converted using .toString().
+
+    console.log(5 + " apples");   // "5 apples"
+    console.log([1,2] + "");      // "1,2"
+
+    3.2 Number Conversion
+    Happens in arithmetic (-, *, /, %) or comparisons (>, <).
+
+    console.log("10" - 1);   // 9
+    console.log(true + 1);   // 2
+    console.log(false * 5);  // 0
+    console.log(null + 5);   // 5  (null → 0)
+    console.log(undefined + 1); // NaN (undefined → NaN)
+
+    3.3 Boolean Conversion
+    Happens in conditions (if, ||, &&, !).
+    0, -0, "", null, undefined, NaN, false
+
+    if ("") console.log("No");       // ("" → false)
+    if ("0") console.log("Yes");     // ("0" → true)
+    if ([]) console.log("Runs");     // ([] → true)
+
+    3.4 Equality (==) Coercion
+    == performs type coercion.
+    === checks both value and type (no coercion).
+
+    console.log(5 == "5");        // true  ("5" → 5)
+    console.log(0 == false);      // true  (false → 0)
+    console.log("" == false);     // true  ("" → 0)
+    console.log(null == undefined); // true (special case)
+    console.log(NaN == NaN);      // false (NaN is never equal to itself)
+

@@ -1,0 +1,36 @@
+DOM Document Object Model
+
+it is a way the browser represent a webpage in tree struct..
+every ele (<div></div>,<p> ..etc) 
+by using js we can manipulate dom 
+
+document 
+    in web page  doc means html structure 
+
+object 
+    object is prop(key) metho(functions) 
+
+model (tree stru)
+    model is struct repres of som..t
+
+
+CRUD Operations Create, Read, update, delete
+
+Create:
+    1. createElement(); // this method is used to create a new HTML element
+    2. createTextNode(); // this method is used to create a new text node
+    3. appendChild(); // this method is used to add a child element to the end of an existing element
+
+Read :
+    1. getElemenyntById(); // this method is used to add content to a specific HTML element
+    2. getElemenyntByClassName(); // this method is used to add content to all HTML elements with a specific class name
+    3. getElemenyntByTagName(); // this method is used to add content to all HTML elements with a specific tag name
+    4. querySelector(); // this method is used to add content to a specific HTML element using a CSS selector
+    // it finds the first matching element in the document and returns it
+    5. querySelectorAll(); // this method is used to add content to all HTML elements using a CSS selector
+    // it finds all matching elements in the document and returns them as a NodeList
+
+update:
+    1. appendChild(): Adds a child element to a parent
+    2. removeChild(): Removes a child element
+    3. replaceChild(): replace an element with another

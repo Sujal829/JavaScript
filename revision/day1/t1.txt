@@ -1,0 +1,69 @@
+What is JavaScript?:
+        JavaScript (JS) is a high-level, dynamic, and interpreted programming language.
+        It is mainly used to make web pages interactive.
+        It runs directly in the browser without the need for compilation.
+        Created in 1995 by Brendan Eich at Netscape.
+
+Key Features
+        Client-side language → runs in the user’s browser.
+        Lightweight & fast.
+        Cross-platform → works on all operating systems and browsers.
+        Event-driven → responds to user actions like clicks, typing, scrolling.
+        Versatile → used for front-end, back-end (Node.js), mobile apps, and more.
+
+Uses of JavaScript
+        Adding interactivity to websites (menus, sliders, pop-ups).
+        Validating form data before sending to the server.
+        Creating animations and effects.
+        Building Single Page Applications (SPA) with frameworks like React, Angular, Vue.
+        Server-side development using Node.js.
+
+How JavaScript Works
+        The browser has a JavaScript Engine (e.g., V8 in Chrome, SpiderMonkey in Firefox).
+        JavaScript code is executed line-by-line (interpreted).
+        Can be included inside HTML using:
+        <script>
+          alert("Hello, JavaScript!");
+        </script>
+        Or from an external file:
+        <script src="script.js"></script>        
+
+Advantages:
+        Easy to learn and use.
+        No special setup — runs in any browser.
+        Rich ecosystem (libraries & frameworks).
+        Works well with HTML & CSS.
+
+Limitations:
+        Code is visible to the user (less secure).
+        Can be disabled in the browser.
+        Performance may be slower for very heavy tasks compared to compiled languages.        
+
+        
+| Feature         | Scripting Language                       | Programming Language (Compiled)                    |
+| --------------- | ---------------------------------------- | -------------------------------------------------- |
+| **Execution**   | Interpreted at runtime                   | Compiled into machine code first                   |
+| **Speed**       | Slower (because interpreted)             | Faster (runs directly in machine code)             |
+| **Development** | Quick and easy to write/test             | More complex — needs compilation step              |
+| **Usage**       | Automating tasks, web scripts, glue code | Full-scale applications, OS, high-performance apps |
+| **Examples**    | JavaScript, Python, Bash                 | C, C++, Java, Go                                   |
+        
+
+defination
+single thread
+syncronos
+static type dynamic type 
+OOPS
+client side
+scriptiing language
+        programming languages 
+                compilation: convert our code into machine language
+                Execution: Execute complied code
+                Eg: C, C++,Java,...
+        scripting language 
+                Execution:
+
+variable
+keywords
+                
+

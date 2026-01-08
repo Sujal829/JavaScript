@@ -1,0 +1,39 @@
+& AND
+let a = 5;      // 0101 in binary
+let b = 3;      // 0011 in binary
+console.log(a & b); // Output: 1 (0001)
+
+
+| OR
+let a = 5;      // 0101
+let b = 3;      // 0011
+console.log(a | b); // Output: 7 (0111)
+
+XOR ^ 
+let a = 5;      // 0101
+let b = 3;      // 0011
+console.log(a ^ b); // Output: 6 (0110)
+
+conditional :
+1. Ternary Operator
+
+condition ? value_if_true : value_if_false;
+
+let age = 17;
+
+let status = (age >= 18) ? "Adult" : "Minor";
+console.log(status);  // Output: Minor
+
+2. typeof:
+
+let age = 20;
+console.log(typeof age);
+
+a='10';
+b=20;
+c="hello"
+
+console.log((typeof a='number')? a: Number(a)+b);
+
+contoral statements :
+

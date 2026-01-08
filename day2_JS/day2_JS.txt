@@ -1,0 +1,56 @@
+
+Summary:
+	Introduction  of JS
+	How Software industry runs? and their types?
+	How Software industry makes money?
+	Architectural diagram of web Application
+	
+
+JavaScript:
+	JS is a programming language that allows you to create interactive, dynamic behavior on websites.
+	
+	HTML is the structure
+	CSS is the style
+	JS is the brain it makes the website come alive!
+	
+	Definition: "Javascript is a single threaded Synchronous dynamically typed partially object oriented client side scripting 
+	language used to create static as well as dynamic web applications"
+	
+	Meaning:
+		Any langauge is used to perform operations on the data. not possible using HTML/CSS
+
+		single threaded(Synchronous):  it means only one piece of code runs at a time in a single thread.
+
+		dynamically typed: 
+		
+		partially object oriented
+		
+		Client Side.
+
+		Scripting language:
+				In software industry there are two types of languages:
+					1. Scripting 
+					2. Programming
+				
+				1. Programming: To run a program:
+					There are tow step:
+						Compilation(compiler): converting our understandable code into machine language
+						Execution: to execute the complied code
+						
+						If any error in the code then you code will not executed
+
+						Example: Java, C, C++ etc.
+				2. Scripting: 
+					In scripting language only one step is followed i.e execution of code
+					Compilation is not required
+					Untill we are not getting any error our code will be executed properly till end point
+					Example: JS, PHP, Python etc
+				
+				
+	
+		
+		
+	
+		
+		
+		

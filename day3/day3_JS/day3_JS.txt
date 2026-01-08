@@ -1,0 +1,93 @@
+
+Summary:
+	Introduction  of JS
+	How Software industry runs? and their types?
+	How Software industry makes money?
+	Architectural diagram of web Application
+	
+
+JavaScript:
+	JS is a programming language that allows you to create interactive, dynamic behavior on websites.
+	
+	HTML is the structure
+	CSS is the style
+	JS is the brain it makes the website come alive!
+	
+	Definition: "Javascript is a single threaded Synchronous dynamically typed partially object oriented client side scripting 
+	language used to create static as well as dynamic web applications"
+	
+	Meaning:
+		Any langauge is used to perform operations on the data. not possible using HTML/CSS
+
+		single threaded(Synchronous):  it means only one piece of code runs at a time in a single thread.
+
+		dynamically typed: 
+		
+		partially object oriented: OOPS
+		
+		Client Side.
+
+		Scripting language:
+				In software industry there are two types of languages:
+					1. Scripting 
+					2. Programming
+				
+				1. Programming: To run a program:
+					There are tow step:
+						Compilation(compiler): converting our understandable code into machine language
+						Execution: to execute the complied code
+						
+						If any error in the code then your code will not execute.
+
+						Example: Java, C, C++ etc.
+				2. Scripting: 
+					In scripting language only one step is followed i.e execution of code
+					Compilation is not required
+					Untill we are not getting any error our code will be executed properly till end point
+					Example: JS, PHP, Python etc
+
+		Static and dynamic applications:
+				Static:
+						All the content of the web application will be writtent in the front end or client side.
+						If I need to reuse/update the content I need to rewrite it.
+						I we need to do the modification in the content then we need to do it at multiple palces.
+				
+				Dynamic:
+						All then content of the web application will be handledfrom the data base.
+						I can re-write the data and retrive as many as multiple times.
+						If I want to do modification that is possible and the content will be reflected at the same time.
+
+		Web applications:
+			Web applications are software which can be executed on the web server
+			We can use browser to access the web application.
+
+
+Features in JS:
+	JS was developed by Brendon Eich(developer) at Netscape company in 1995
+	Laster JS was called ECMA Script or ES
+	ECMA: European computer Manufacturing Association
+	Lightweight
+	Can insert new html element dynamically
+	JS is used to handle events
+	It is client side
+	Less server side interaction
+	Faster and immediate feedback
+	It supported by all the modern browsers
+
+Limitations:
+	Can not use JS for multi threading
+	Can not use for Networking applications
+	
+
+
+
+
+				
+				
+	
+		
+		
+	
+		
+		
+		
